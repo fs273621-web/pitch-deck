@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PolliSync - Pitch Deck</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+  
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    background-color: #080D0A;
+    color: #ECFDF5;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide {
+    width: 297mm;
+    height: 210mm;
+    page-break-after: always;
+    position: relative;
+    padding: 16mm 18mm;
+    background: linear-gradient(135deg, #0A120D 0%, #050806 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    border-bottom: 1px solid #132A1C;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #10B98133;
+    padding-bottom: 8px;
+  }
+
+  .header-logo {
+    max-height: 32px;
+  }
+
+  .slide-number {
+    font-size: 14px;
+    color: #6EE7B7;
+    font-weight: 600;
+  }
+
+  h1.slide-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-top: 8px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    color: #A7F3D0;
+    margin-bottom: 12px;
+  }
+
+  .content-grid {
+    display: grid;
+    gap: 15px;
+    flex-grow: 1;
+    margin-top: 8px;
+  }
+
+  .cols-2 { grid-template-columns: 1fr 1fr; }
+  .cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  .card {
+    background: #111C15;
+    border: 1px solid #1E3A2B;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #34D399;
+    margin-bottom: 6px;
+  }
+
+  .big-stat {
+    font-size: 34px;
+    font-weight: 800;
+    color: #10B981;
+    margin: 4px 0;
+  }
+
+  p, li {
+    font-size: 12.5px;
+    color: #D1FAE5;
+    line-height: 1.5;
+  }
+
+  ul { list-style: none; }
+  ul li::before {
+    content: "• ";
+    color: #10B981;
+    font-weight: bold;
+  }
+
+  /* Cover Slide */
+  .cover {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, #0F291B 0%, #050806 80%);
+  }
+
+  .cover-logo {
+    max-width: 280px;
+    margin-bottom: 20px;
+  }
+
+  .cover h1 {
+    font-size: 42px;
+    color: #10B981;
+    margin-bottom: 8px;
+  }
+
+  .cover h2 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .meta-box {
+    display: flex;
+    gap: 40px;
+    background: #111C15;
+    padding: 14px 28px;
+    border-radius: 10px;
+    border: 1px solid #1E3A2B;
+    text-align: left;
+  }
+
+  .qr-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 2px solid #10B981;
+    background: #FFFFFF;
+    padding: 4px;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER -->
+<div class="slide cover">
+  <img src="logo.png" alt="HexaPulse" class="cover-logo">
+  <h1>PolliSync</h1>
+  <h2>AI-Powered Decision-Support System for Field-Level Pollination Risk</h2>
+  <div class="meta-box">
+    <div>
+      <p style="color: #6EE7B7; font-weight: 600;">Team Members:</p>
+      <p>Aymane El Guardi | Nour Al-Houda Saad</p>
+      <p>Aser Mohamed Hamada | Mariam Ismail Shaban</p>
+      <p>Fatma Sayed Saleh</p>
+    </div>
+    <div>
+      <p style="color: #6EE7B7; font-weight: 600;">School & Mentor:</p>
+      <p>Bahteem Official Language School</p>
+      <p>Mentor: Ahmed Eid Awad Ali</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 2: THE PROBLEM -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">02 / 10</div></div>
+  <h1 class="slide-title">The Crisis: Pollination Under Climate Pressure</h1>
+  <div class="subtitle">Pollination is vital yet increasingly unpredictable due to climate volatility.</div>
+  <div class="content-grid cols-3">
+    <div class="card">
+      <div class="card-title">Food Vulnerability</div>
+      <div class="big-stat">> 75%</div>
+      <p>Of global food crop types rely directly on insect pollinators for yield and quality.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Economic Risk</div>
+      <div class="big-stat">$235B-$577B</div>
+      <p>Annual global crop value facing direct risk from pollinator decline and weather mismatches.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Measured Impact</div>
+      <div class="big-stat">+20%</div>
+      <p>Higher kernel yield in bee-pollinated almond trees vs isolated controls.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 3: THE SOLUTION -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">03 / 10</div></div>
+  <h1 class="slide-title">PolliSync Solution: What We Build</h1>
+  <div class="subtitle">An end-to-end AI forecasting system turning fragmented signals into decision support.</div>
+  <div class="content-grid cols-2">
+    <div class="card">
+      <div class="card-title">Key Product Features</div>
+      <ul>
+        <li><b>AI Forecast:</b> Field-level pollination risk scale (0–100) with confidence scoring.</li>
+        <li><b>Multimodal Sensing:</b> Pollen, weather, microclimate, and phenology tracking.</li>
+        <li><b>Explainable AI:</b> Plain-language insights on why risk levels are triggered.</li>
+        <li><b>Action Tracking:</b> Record actions (e.g. hive placement) and yield outcomes.</li>
+      </ul>
+    </div>
+    <div class="card" style="background: #0B150E; align-items: center; justify-content: center;">
+      <div class="card-title" style="color: #10B981;">Simulated Risk Gauge</div>
+      <div class="big-stat" style="font-size: 52px; color: #34D399;">35 / 100</div>
+      <p style="color: #6EE7B7; font-weight: 700;">STATUS: LOW RISK</p>
+      <p style="margin-top: 8px; text-align: center;">Bloom within expected range. Microclimate suitable for flight.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 4: HARDWARE & DATA PATH -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">04 / 10</div></div>
+  <h1 class="slide-title">How It Works: PolliNode & Data Path</h1>
+  <div class="subtitle">From field signals to measurable grower decisions.</div>
+  <div class="content-grid cols-4">
+    <div class="card">
+      <div class="card-title">1. Sense</div>
+      <p>Multimodal Edge Sensing: Digital MEMS Microphone, VOC, Temp/Humidity, Light Sensors.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">2. Edge QC</div>
+      <p>Raspberry Pi Compute Module 4 filters local noise and verifies sensor integrity.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">3. Predict</div>
+      <p>Crop-specific models forecast pollination risk window over 14-day / 72-hour horizons.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">4. Action</div>
+      <p>Actionable alerts sent to growers via app to optimize hive placement and interventions.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 5: AI & DIAGNOSTIC TRUST -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">05 / 10</div></div>
+  <h1 class="slide-title">Trustworthy AI: Diagnostics & Confidence</h1>
+  <div class="subtitle">Building grower confidence through explainable outputs and high data quality.</div>
+  <div class="content-grid cols-2">
+    <div class="card">
+      <div class="card-title">Model Reliability</div>
+      <div class="big-stat">91%</div>
+      <p>Simulated classification confidence based on continuous field validation loops.</p>
+      <p style="margin-top: 10px;"><b>Data Quality Status:</b> <span style="color: #34D399;">GOOD</span></p>
+    </div>
+    <div class="card">
+      <div class="card-title">Closed-Loop Learning</div>
+      <ul>
+        <li><b>Sense → Measure → Learn:</b> Future field validation updates future models.</li>
+        <li><b>Camera-Free Architecture:</b> High privacy protection with low hardware power requirements.</li>
+        <li><b>Explainability First:</b> Every risk score includes direct environmental drivers.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 6: CLIMATE IMPACT -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">06 / 10</div></div>
+  <h1 class="slide-title">Climate Co-Benefits & Environmental Impact</h1>
+  <div class="subtitle">Direct contribution to the Oxford Saïd Global Climate Tech Challenge goals.</div>
+  <div class="content-grid cols-3">
+    <div class="card">
+      <div class="card-title">CO2 Impact Avoided</div>
+      <div class="big-stat">1,788.5 kg</div>
+      <p>Reduced unnecessary tractor runs and field inspections via predictive alerts.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Water Conservation</div>
+      <div class="big-stat">10,921 L</div>
+      <p>Optimized irrigation timing synchronized with pollinator flight activity windows.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Biodiversity Protection</div>
+      <div class="big-stat">High Protection</div>
+      <p>Prevents chemical spraying during active bloom hours to preserve native wild bees.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 7: TARGET AUDIENCE -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">07 / 10</div></div>
+  <h1 class="slide-title">Target Audience: Who Benefits and Why</h1>
+  <div class="subtitle">Empowering stakeholders across the agricultural value chain.</div>
+  <div class="content-grid cols-4">
+    <div class="card">
+      <div class="card-title">Growers</div>
+      <p>Eliminate guesswork and protect yield during narrow critical pollination windows.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Agronomists</div>
+      <p>Shared evidence layer for inspecting crop-specific environmental drivers.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Beekeepers</div>
+      <p>Data-driven support for optimal hive placement and timing decisions.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Food Systems</div>
+      <p>Enhanced food security and resilient crop yields under climate stress.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 8: MARKET OPPORTUNITY -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">08 / 10</div></div>
+  <h1 class="slide-title">Market Opportunity & Regional Scale</h1>
+  <div class="subtitle">A multi-billion-dollar global market with strong climate urgency.</div>
+  <div class="content-grid cols-3">
+    <div class="card">
+      <div class="card-title">Market Size</div>
+      <div class="big-stat">$3B - $5B</div>
+      <p>Global pollination services and decision-support ag-tech market.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Annual Growth</div>
+      <div class="big-stat">10 - 15%</div>
+      <p>Driven by climate variability, food demand, and sustainability pressures.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Expansion Plan</div>
+      <div class="big-stat">Mediterranean</div>
+      <p>Phased expansion across Egypt, North Africa, and Southern Europe.</p>
+    </div>
+  </div>
+</div>
+<!-- SLIDE 9: COST & ECONOMICS -->
+<div class="slide">
+  <div class="header"><img src="logo.png" class="header-logo"><div class="slide-number">09 / 10</div></div>
+  <h1 class="slide-title">Cost & Business Model</h1>
+  <div class="subtitle">Affordable hardware paired with scalable decision-as-a-service model.</div>
+  <div class="content-grid cols-3">
+    <div class="card">
+      <div class="card-title">PolliNode Hardware</div>
+      <div class="big-stat">$100 - $130</div>
+      <p>One-time purchase per node. Built with accessible, off-the-shelf components.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Software / Service</div>
+      <div class="big-stat">$25 - $40</div>
+      <p>Per acre / year for analytics, continuous AI updates, and alert services.</p>
+    </div>
+    <div class="card">
+      <div class="card-title">Payback Target</div>
+      <div class="big-stat">&lt; 1 Season</div>
+      <p>Rapid ROI through saved yield and reduced operational input wastage.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SLIDE 10: DEMO & CLOSING -->
+<div class="slide" style="align-items: center; justify-content: center; text-align: center;">
+  <img src="logo.png" alt="HexaPulse" style="max-width: 220px; margin-bottom: 15px;">
+  <h1 style="font-size: 32px; color: #10B981; margin-bottom: 10px;">Experience PolliSync Live</h1>
+  <p style="margin-bottom: 20px; max-width: 550px;">Scan the QR code below to explore our live interactive prototype and environmental analytics.</p>
+  
+  <img src="qr.png" alt="PolliSync QR Code" class="qr-img">
+
+  <p style="margin-top: 15px; color: #34D399; font-weight: 700; font-size: 16px;">pollisync.vercel.app</p>
+  <p style="margin-top: 8px; font-size: 11px; color: #6EE7B7;">Oxford Saïd Global Climate Tech Challenge 2026</p>
+</div>
+
+</body>
+</html>
